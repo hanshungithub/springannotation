@@ -12,7 +12,14 @@ import java.util.Map;
 
 public class IOCTest {
 	AnnotationConfigApplicationContext applicationContext = new AnnotationConfigApplicationContext(MainConfig2.class);
-	
+
+	@Test
+    public void testFactoryBean() {
+        printBeans(applicationContext);
+
+        Object bean = applicationContext.getBean("colorFactoryBean");
+        System.out.println(bean.getClass());
+    }
 	
 	@Test
 	public void testImport(){

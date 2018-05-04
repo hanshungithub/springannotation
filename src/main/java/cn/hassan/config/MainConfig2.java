@@ -1,6 +1,7 @@
 package cn.hassan.config;
 
 import cn.hassan.bean.Color;
+import cn.hassan.bean.ColorFactoryBean;
 import cn.hassan.bean.Person;
 import cn.hassan.bean.Red;
 import cn.hassan.condition.LinuxCondition;
@@ -76,10 +77,10 @@ public class MainConfig2 {
 	 * 		2）、要获取工厂Bean本身，我们需要给id前面加一个&
 	 * 			&colorFactoryBean
 	 */
-/*	@Bean
+	@Bean
 	public ColorFactoryBean colorFactoryBean(){
 		return new ColorFactoryBean();
-	}*/
+	}
 	
 	
 	
